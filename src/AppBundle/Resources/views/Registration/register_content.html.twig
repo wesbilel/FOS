@@ -1,0 +1,26 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+<div class="top-score-title right-score col-md-12">
+
+    <h3>Register <span>Now</span><span class="point-int"> !</span></h3>
+    <div class="col-md-12 login-page">
+        <form method="post" class="register-form">
+            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+            {{ form_widget(form) }}
+
+    <div>
+        <input type="submit" value="{{ 'submit'|trans }}" />
+    </div>
+
+
+        </form>
+        <div class="ctn-img">
+            <img src="{{ asset('images/federer.png') }}" />
+        </div><!--Close Images-->
+        <div class="clear"></div>
+    </div>
+
+</div><!--Close REgistration-->
+</div>
+{{ form_end(form) }}

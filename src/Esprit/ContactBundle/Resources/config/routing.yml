@@ -1,0 +1,7 @@
+esprit_contact_homepage:
+    path:     /
+    defaults: { _controller: EspritContactBundle:Default:index }
+
+contact:
+    path:     /contacter
+    defaults: { _controller: EspritContactBundle:Contact:contacter }
